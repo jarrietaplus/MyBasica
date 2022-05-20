@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nahuelsoftware.mybasica">
+    <!-- Permisions -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Permisions para Bluetooth -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- a confirmar su uso -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyBasica"
+        android:usesCleartextTraffic="true">
+        <!-- file -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.nahuelsoftware.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileprovider" />
+        </provider> <!-- file -->
+        <activity
+            android:name=".Activity7"
+            android:label="Camera" />
+        <activity
+            android:name=".Activity61"
+            android:label="Libraries" />
+        <activity
+            android:name=".Activity8"
+            android:label="ScreenShot"/>
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activity4"
+            android:label="Battery Test" />
+        <activity
+            android:name=".Activity3"
+            android:label="BT on/off/visible/list" />
+        <activity
+            android:name=".Activity2"
+            android:label="WiFi Analizer" />
+        <activity
+            android:name=".Activity1"
+            android:label="@string/title_activity_1"
+            android:theme="@style/Theme.MyBasica.NoActionBar" />
+        <activity
+            android:name=".Activity5"
+            android:label="Audio Control" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

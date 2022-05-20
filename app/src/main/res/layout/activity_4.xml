@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Activity4">
+<!--
+    <TextView
+        android:id="@+id/twBattTechnology"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery Technology : " />
+
+    <TextView
+        android:id="@+id/twBattVoltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery Voltage (mV) : " />
+
+    <TextView
+        android:id="@+id/twBattLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery Level (%): " />
+
+    <TextView
+        android:id="@+id/twBattTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery Temperature (decºC): " />
+-->
+    <Button
+        android:id="@+id/scanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <ListView
+        android:id="@+id/scannedListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="96dp" />
+</LinearLayout>

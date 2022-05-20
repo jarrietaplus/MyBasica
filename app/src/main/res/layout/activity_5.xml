@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity5">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/textViewClk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Volume Control Click"
+            android:textSize="20dp"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <SeekBar
+            android:id="@+id/barraVolumen1"
+            style="@android:style/Widget.DeviceDefault.SeekBar" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingHorizontal="20dp">
+            <Button
+                android:id="@+id/buttonDown1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="down"/>
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="40dp">
+            </ImageView>
+            <Button
+                android:id="@+id/buttonUp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Up"/>
+        </LinearLayout>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Volume Control Music"
+            android:textSize="20dp"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <SeekBar
+            android:id="@+id/barraVolumen2"
+            style="@android:style/Widget.DeviceDefault.SeekBar" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingHorizontal="20dp">
+            <Button
+                android:id="@+id/buttonDown2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="down"/>
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="40dp">
+            </ImageView>
+            <Button
+                android:id="@+id/buttonUp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Up"/>
+        </LinearLayout>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Volume Control Alarm"
+            android:textSize="20dp"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <SeekBar
+            android:id="@+id/barraVolumen3"
+            style="@android:style/Widget.DeviceDefault.SeekBar" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingHorizontal="20dp">
+            <Button
+                android:id="@+id/buttonDown3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="down"/>
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="40dp">
+            </ImageView>
+            <Button
+                android:id="@+id/buttonUp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Up"/>
+        </LinearLayout>
+    </TableLayout>
+</LinearLayout>

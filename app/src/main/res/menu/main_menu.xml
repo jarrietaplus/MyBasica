@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/accion1"
+        android:title="Acción1"
+        android:icon="@drawable/ic_baseline_filter_1_24"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/accion2"
+        android:title="Acción2"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/accion3"
+        android:title="Acción3"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/accion4"
+        android:title="Salir"
+        app:showAsAction="never"/>
+
+</menu>

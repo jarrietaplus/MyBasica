@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    tools:context=".Activity6"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+<!---CircleImageView-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_gravity="center"
+                                    android:background="#3300cc">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/profile_image"
+                                        android:layout_width="150dp"
+                                        android:layout_height="150dp"
+                                        android:src="@drawable/la_rubia_divina"
+                                        app:civ_border_width="5dp"
+                                        app:civ_border_color="#FF000000"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="Ejemplo de la lib: CircleImageView"
+                                        android:textColor="@color/white"
+                                        android:gravity="center">
+                                    </TextView>
+
+                                </LinearLayout>
+<!---Graficas-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#8E24AA">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="match_parent"/>
+
+                            <com.github.mikephil.charting.charts.LineChart
+                                android:id="@+id/lineChart"
+                                android:layout_width="275dp"
+                                android:layout_height="200dp"/>
+
+                        </LinearLayout>
+<!---AutofitTextView-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="#260B77">
+
+                            <me.grantland.widget.AutofitTextView
+                                android:id="@+id/textView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:text="Ejemplo de uso de la lib: AutoFitTextView"
+                                android:textSize="60dp"
+                                android:maxLines="3"
+                                android:textColor="#ff0000"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

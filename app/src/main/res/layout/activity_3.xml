@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Activity3">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- TextView: muestra si BT esta disponible o no-->
+    <TextView
+        android:id="@+id/bluetoothStatusTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20dp"/>
+    <!-- ImageView: icono BT on/off-->
+    <ImageView
+        android:id="@+id/bluetoothIv"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_bluetooth_off"/>
+    <!-- Button: poner BT on-->
+    <Button
+        android:id="@+id/turnOnBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="BT ON"
+        android:minWidth="200dp"/>
+    <!-- Button: poner BT off-->
+    <Button
+        android:id="@+id/turnOffBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="BT OFF"
+        android:minWidth="200dp"/>
+    <!-- Button: hacer BT visible-->
+    <Button
+        android:id="@+id/disciverableBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="BT VISIBLE"
+        android:minWidth="200dp"/>
+    <!-- Button: obtener lista de pareados-->
+    <Button
+        android:id="@+id/pairedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Obtener pareados"
+        android:minWidth="200dp"/>
+    <!-- TextView: mostrar lista de pareados-->
+    <TextView
+        android:id="@+id/pairedTv"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"/>
+
+    
+</LinearLayout>
